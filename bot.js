@@ -23,7 +23,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     if (message.substring(0, 1) == ',') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
-       
+
         args = args.splice(1);
         switch(cmd) {
             // ,ping
@@ -33,9 +33,16 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     message: 'Pong!'
                 });
             break;
-            // ,anime (name)
-			case anime:
-			   
+            // Send a message
+            case 'hello!':
+            bot.sendMessage({
+              to: #admin,
+              message: 'sup'
+            });
+
+              break;
+
+
 
          }
      }
