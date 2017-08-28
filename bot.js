@@ -36,7 +36,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             // Send a message
             case 'hello!':
             bot.sendMessage({
-              to: #admin,
+              to: admin,
               message: 'sup'
             });
 
